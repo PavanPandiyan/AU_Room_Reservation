@@ -1,0 +1,43 @@
+/* Footer styling */
+footer {
+  padding: 15px 0;
+  text-align: center;
+  background: linear-gradient(90deg, #0044cc, #0066ff);
+  color: #f8f9fa;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute; /* Changed from relative to absolute */
+  width: 100%;
+  bottom: 0;
+}
+
+/* Ensure text remains readable and centered */
+footer p {
+  margin: 0;
+  padding: 0 10px;
+}
+
+/* Footer Links */
+footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #cce5ff;
+  text-decoration: underline;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer {
+    padding: 12px;
+    font-size: 13px;
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+}

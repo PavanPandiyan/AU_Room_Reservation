@@ -1,0 +1,129 @@
+.flex1{
+    display: flex;
+    flex-direction: row;
+
+}
+.container {
+    width: 88%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden; /* Prevents unwanted horizontal scroll */
+    display: flex;
+    flex-direction: column;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.table-wrapper {
+    flex-grow: 1;
+    overflow-y: auto; /* Enables vertical scrolling */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+}
+
+/* Hides scrollbar for WebKit browsers like Chrome & Safari */
+.reservations-table-wrapper::-webkit-scrollbar {
+    display: none;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #007BFF;
+    color: white;
+}
+.btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.delete-btn {
+    background-color: red;
+}
+.edit-btn {
+    background-color: green;
+}
+.save-btn {
+    background-color: orange;
+    display: none;
+}
+.editable {
+    background-color: #ffffcc;
+}
+
+.highlight {
+    background-color: #ffeb3b; /* Yellow background for highlighting */
+}
+
+.filter-search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-search input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 70%;
+}
+
+.filter-search select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 15%;
+}
+.filter-search button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 15%;
+}
+
+.filter-search button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-search button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    table {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
